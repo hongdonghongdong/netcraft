@@ -12,7 +12,7 @@ class DefaultController extends Controller
     
 
     /**
-     * @Route("/", name="dom")
+     * @Route("/", name="index")
      */
     public function indexAction(Request $request)
     {
