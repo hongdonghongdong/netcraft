@@ -9,12 +9,11 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class DefaultController extends Controller
 {
-    
 
     /**
-     * @Route("/", name="index")
+     * @Route("/crawler", name="dom")
      */
-    public function indexAction(Request $request)
+    public function crawler(Request $request)
     {
         $starting_url='https://searchdns.netcraft.com/?restriction=site+contains&host=google&lookup=wait..&position=limited';
         $html = file_get_contents($starting_url);
